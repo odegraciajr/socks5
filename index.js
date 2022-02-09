@@ -1,7 +1,7 @@
 const socks5 = require('simple-socks');
 const port = 1081;
-const USERNAME = process.env.AUTH_USERNAME || 'mysocker';
-const PASSWORD = process.env.USER || 'admin1234';
+const USERNAME = process.env.AUTH_USERNAME || 'socks';
+const PASSWORD = process.env.SOCKS_PASSWORD || process.env.USER;
 
 console.log(`USERNAME: ${USERNAME} PASSWORD: ${PASSWORD}`);
 
